@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Smart Movie Recommender</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>🎬 Smart Movie Recommendation System</h1>
+
+<p>Total Movies Added: <span id="movieCount">0</span></p>
+
+<h2>Add Movie</h2>
+
+<input id="movieName" placeholder="Movie Name">
+
+<select id="genre">
+
+<option value="">Select Genre</option>
+<option>Action</option>
+<option>Sci-Fi</option>
+<option>Comedy</option>
+<option>Drama</option>
+<option>Horror</option>
+
+</select>
+
+<input id="rating" placeholder="Rating (1-10)">
+
+<button onclick="addMovie()">Add Movie</button>
+
+<h2>Search Movies</h2>
+
+<input id="searchInput" placeholder="Search movie..." onkeyup="searchMovies()">
+
+<h2>Your Movie History</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Movie</th>
+<th>Genre</th>
+<th>Rating</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+<h2>Get Recommendations</h2>
+
+<select id="recommendGenre">
+
+<option value="">Select Genre</option>
+<option>Action</option>
+<option>Sci-Fi</option>
+<option>Comedy</option>
+<option>Drama</option>
+<option>Horror</option>
+
+</select>
+
+<button onclick="recommendMovies()">Recommend</button>
+
+<div id="recommendResult" class="recommend-box"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
